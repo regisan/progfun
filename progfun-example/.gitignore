@@ -1,9 +1,2 @@
-.settings
-.classpath
-.project
-.cache
-.worksheet/bin
 target
 lib_managed
-project
-submission
