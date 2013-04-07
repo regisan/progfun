@@ -9,6 +9,19 @@ object HelloWorksheet {;import org.scalaide.worksheet.runtime.library.WorksheetS
   
   def square(x: Int) = x * x;System.out.println("""square: (x: Int)Int""");$skip(15); val res$1 = 
   
-  square(x);System.out.println("""res1: Int = """ + $show(res$1))}
+  square(x);System.out.println("""res1: Int = """ + $show(res$1));$skip(174); 
+  
+  def sum(f: Int => Int, a: Int, b: Int): Int = {
+  
+  	def loop(a: Int, acc: Int): Int = {
+  		if (a > b) acc
+  		else loop(a + 1, acc + f(a))
+  	}
+  	
+  	loop(a, 0)
+  };System.out.println("""sum: (f: Int => Int, a: Int, b: Int)Int""");$skip(24); val res$2 = 
+  
+ sum(x => x, 0, 100);System.out.println("""res2: Int = """ + $show(res$2))}
+  
   
 }
